@@ -1,0 +1,112 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>드론소개 앱</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="호버바이크2.jpg" >
+			<ul data-role="listview"
+			 data-inset="true">
+				<li><a href="#intro">드론소개</a></li>
+				<li><a href="#movie" data-rel="dialog">드론영상</a></li>
+				<li><a href="#gallery">드론사진</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>DRONE</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="intro" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>드론 소개</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="호버바이크3.jpg">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>드론의정의</h3>
+					<p>사람이 타지 않고 하늘, 지상, 해상, 수중에서 특정 목적을 위해 무선 조종을 통해 원격으로 움직이는 이동체
+
+					</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>드론의 어원</h3>
+					<p>사전적 의미: 수벌(Male Bee)
+						1935년 미국 해군 제독 윌리엄 스탠들리(William Standley)가 영국을 방문해 영국왕실해군이 ‘여왕벌(Queen Bee)’이라 부르는 원격조정 무인기를 가상타깃으로 띄워 사격시범을 하는 것을 관람한 후 미국으로 돌아와 해군연구소 훼르니 중령에게 해군 대공포사격 훈련용으로 여왕벌과 유사한 무인비행기를 만들게 했다.  이때 훼르니 중령은 영국 해군의 여왕벌에 상응하는 이름으로 ‘수벌(Drone)’이라는 이름을 붙였다고 한다. 
+						</p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>드론의 종류</h3>
+					<p>고정익,회전익,틸트로더</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>DRONE</h1>
+		</div>		
+	</div>
+	
+	<div data-role="page" id="movie" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>드론영상</h1>
+		</div>
+		<div data-role="content" >
+			<div class="ui-bar ui-bar-a">호버바이크 동영상</div><br/>
+			<li><iframe width="560" height="315" src="https://www.youtube.com/embed/SCP2WANXYiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li><br/>
+			<div class="ui-bar ui-bar-a">군집드론 동영상플</div><br/>
+			<li><iframe width="560" height="315" src="https://www.youtube.com/embed/kV6WDduOKc0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+		</div>
+		<div data-role="footer" data-theme="b">
+		</div>
+	</div>
+	
+	
+
+
+
+	<div data-role="page" id="gallery"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>드론축구 갤러리</h1>
+		</div>
+		<div data-role="content">
+            <ul class="picture">
+				<li><a href="드론축구1.png" rel="external"><img src="드론축구1.png" /></a></li>	
+				<li><a href="드론축구2.jpg" rel="external"><img src="드론축구2.jpg" /></a></li>	
+				<li><a href="드론축구3.jfif" rel="external"><img src="드론축구3.jfif" /></a></li>	
+				<li><a href="드론축구5.jfif" rel="external"><img src="드론축구5.jfif" /></a></li>	
+				<li><a href="드론축구6.jfif" rel="external"><img src="드론축구6.jfif" /></a></li>	
+			
+            </ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>DRONE</h1>
+		</div>		
+	</div>
+</div>	
+</body>
+</html>
